@@ -94,7 +94,7 @@ body {
 /* About Section */
 .about-section {
     text-align: center;
-    max-width: 800px;
+    max-width: 1500px;
     margin: 3rem 0;
     padding: 2.5rem;
     background: rgba(255, 255, 255, 0.1);
@@ -117,6 +117,29 @@ body {
     margin-bottom: 1.2rem;
     opacity: 0.95;
     font-weight: 400;
+}
+
+/* Lore Images Section */
+.lore-images {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.lore-image {
+    max-width: 400px;
+    width: auto;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.lore-image:hover {
+    transform: translateY(-5px);
 }
 
 /* Buttons Section */
@@ -217,6 +240,14 @@ body {
         font-size: 1.1rem;
     }
 
+    .lore-images {
+        gap: 1.5rem;
+    }
+
+    .lore-image {
+        max-width: 100%;
+    }
+
     .buttons-section {
         flex-direction: column;
         align-items: center;
@@ -243,6 +274,10 @@ body {
 
     .about-text {
         font-size: 1rem;
+    }
+
+    .lore-images {
+        gap: 1rem;
     }
 
     .action-btn {
